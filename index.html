@@ -265,7 +265,6 @@ footer{text-align:center;color:var(--muted);padding:32px 16px 48px;font-size:.9r
   <section id="terms">
     <div class="wrap">
       <h2>What I draw</h2>
-      <p class="sub">Not sure if your idea fits? Ask anyway and I'll let you know.</p>
       <div class="terms">
         <div class="card yes"><h3>Will draw</h3><ul><li>Original characters</li><li>Fanart</li><li>Couples / Groups / Yumeships</li><li>Light horror / gore</li><li>Suggestive</li><li>Portraits</li></ul></div>
         <div class="card no"><h3>Won't draw</h3><ul><li>NSFW</li><li>Hate or harassment</li><li>Fetish art</li><li>Detailed mecha</li><li>Furry (not good enough to draw yet sry)</li><li>Animals</li></ul></div>
@@ -305,7 +304,7 @@ footer{text-align:center;color:var(--muted);padding:32px 16px 48px;font-size:.9r
 </main>
 
 <footer>
-  All artwork belongs to the artist. Please don't repost or use for AI training. Coded by Carianna
+  All artwork belongs to me, Naya. Please don't repost or use for AI training or everyone dies. Website coded by Carianna
 </footer>
 
 <dialog id="lb" aria-label="Artwork viewer">
@@ -371,7 +370,7 @@ function renderPrices(){
     el.textContent = c === 'USD' ? fmt.format(usd) : '≈ ' + fmt.format(Math.round(usd * r));
   });
   fxNote.textContent = c === 'USD' ? '' :
-    `Approximate, using ${live ? "today's" : 'estimated'} exchange rate. You'll be invoiced in USD.`;
+    `Approximate, using ${live ? "today's" : 'estimated'} exchange rate.`;
 }
 curSel.addEventListener('change', () => { renderPrices(); try{localStorage.setItem('cur',curSel.value)}catch(e){} });
 try { const saved = localStorage.getItem('cur'); if (saved && FALLBACK[saved]) curSel.value = saved; } catch(e){}
